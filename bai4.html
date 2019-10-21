@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mật khẩu hợp lệ</title>
+</head>
+<body>
+<script>
+    function isPassword(str) {
+        regexp = /^[A-z][\w\.]{5,31}$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false
+    }
+
+    let str = prompt("Nhập mật khẩu kiểm tra");
+    if (isFormatYear(str)) {
+        alert(str + " hợp lệ ");
+    } else alert(str + " không hợp lệ");
+</script>
+</body>
+</html>

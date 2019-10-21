@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ngày tháng năm</title>
+</head>
+<body>
+<script>
+    function isFormatYear(str) {
+        regexp = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false
+    }
+
+    let str = prompt("Nhập chuỗi cần kiểm tra");
+    if (isFormatYear(str)) {
+        alert(str + " hợp lệ ");
+    } else alert(str + " không hợp lệ");
+</script>
+</body>
+</html>

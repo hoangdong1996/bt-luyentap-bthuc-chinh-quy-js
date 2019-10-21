@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyên âm, phụ ấm</title>
+</head>
+<body>
+<script>
+    function isVowel(str) {
+        regexp = /[aeoiuAEOIU]/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false
+    }
+
+    let str = prompt("Nhập từ kiểm tra");
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (isVowel(str)) {
+            count++;
+        }
+    }
+    alert("Số nguyên âm " + count);
+    alert("Số phụ âm " + (28 - count));
+</script>
+</body>
+</html>
